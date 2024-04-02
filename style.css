@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.jumbotron {
+  position: relative;
+  color: #ffff;
+}
+
+.jumbotron::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   margin-bottom: 3rem;
+   width: 100%;
+   height: 100%;
+   background-image: url('img/header.jpg');
+   background-size: cover;
+   background-position: center;
+   filter: brightness(60%); /* Adjust brightness percentage as needed */
+   z-index: -1;
+ }
+
+ .jumbotron-content {
+   position: relative;
+   z-index: 1; /* Ensure content is above background overlay */
+   padding: 4rem; /* Adjust padding as needed */
+   text-align: center;
+ }
+
+.jumbotron-content h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  transition: all 0.7s;
+}
+
+.jumbotron-content h4 {
+  font-size: 1.7rem;
+  margin-bottom: 0.7rem;
+  transition: all 0.8s;
+}
+
+.jumbotron-content p {
+  margin-bottom: 7rem;
+  transition: all 0.9s;
+}
+
+.jumbotron-content a {
+  padding: 2rem 1.5rem;
+  background-color: #ffff;
+  border-radius: 100%;
+  text-decoration: none;
+  color: rgb(235, 15, 15);
+  font-weight: bold;
+  transition: all 0.7s;
+}
+
+.jumbotron-content a:hover {
+  background-color: rgb(235, 15, 15);
+  color: #ffff;
+  transition: all 0.7s;
+}
+
+.container {
+  padding: 2rem;
+  background-color: rgb(26, 25, 25);
+}
+
+.card {
+  background-color: rgb(31, 30, 30);
+  padding: 1rem;
+  border-radius: 5px;
+  color: #ffff;
+  margin-bottom: 2rem;
+}
+
+.section-image{
+   display: flex;
+}
+
+.section-image img{
+   width: 350px;
+   justify-content: center;
+   margin-inline: auto;
+   align-items: center;
+   margin-bottom: 2rem;
+   border-radius: 50%;
+}
+
+.section-title {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.section-article p {
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+
+.button-testimoni {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.btn-testi {
+  text-decoration: none;
+  padding: 10px 20px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+.btn-testi:hover {
+  cursor: pointer;
+}
+
+.success {
+  background-color: rgb(28, 172, 64);
+  color: #ffff;
+}
+.success:hover {
+  background-color: rgb(10, 223, 63);
+  color: #ffff;
+  transition: all 0.7s;
+}
+
+.danger {
+  background-color: rgb(216, 66, 20);
+  color: #ffff;
+}
+.danger:hover {
+  background-color: rgb(241, 74, 24);
+  color: #ffff;
+  transition: all 0.7s;
+}
+
+.row {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 1rem;
+   width: 100%;
+   margin-bottom: 2rem;
+}
+
+.col-4{
+   flex: 33.33%;
+   background-color:rgb(31, 30, 30) ;
+   padding: 2rem;
+   color: #ffff;
+}
+
+.col-4 h2{
+   text-align: center;
+   font-size: 1rem;
+}
+
+.col-4 p{
+   font-size: 0.8rem;
+}
